@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL ECOSYSTEM DESIGNED FOR WOMEN TO COMBAT FGM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+</head>
+<body id="bodyElement">
+    <header>
+        <a href="#" class="logo">Digital Ecosystem</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#community">Community Forum</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#news-updates">News/Updates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="bx bx-moon" id="darkmode" onclick="toggleDarkMode()"></div>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-dribbble'></i></a>
+            <a href="#"><i class='bx bxl-behance'></i></a>
+        </div>
+        <div class="home-text">
+            <span>Welcome to</span>
+            <h1>Your Digital Ecosystem</h1>
+            <p><b>Empowering Women to Combat Female Genital Mutilation (FGM) in Society:</b></p>
+            <p class="mission">Our mission is to end the practice of Female Genital Mutilation (FGM) by empowering women, raising awareness, and advocating for policy change. We are committed to providing support to survivors, educating communities, and fostering a culture of respect for women's rights and bodily autonomy. Through collaboration, education, and advocacy, we strive to create a world where every woman and girl can live free from the physical and psychological harm of FGM, with dignity and equality.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+        <div class="home-img">
+            <img src="C:\Users\mikes\Desktop\fgm.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About</h2>
+            <span>Empowering Women to Combat FGM</span>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="C:\Users\mikes\Desktop\about.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Our Mission</h2>
+                <p>To end the practice of Female Genital Mutilation (FGM) by empowering women, raising awareness, and advocating for policy change. We are committed to providing support to survivors, educating communities, and fostering a culture of respect for women's rights and bodily autonomy. Through collaboration, education, and advocacy, we strive to create a world where every woman and girl can live free from the physical and psychological harm of FGM, with dignity and equality.</p>
+                <div class="information">
+                    <h2>Our Vision</h2>
+                    <p>A world where every woman and girl lives free from the fear and harm of Female Genital Mutilation (FGM), where their bodies are respected, their voices heard, and their rights upheld. We envision a future where communities thrive in equality and dignity, where generations to come are spared from the physical and emotional scars of FGM. Together, we strive towards a world where empowerment and education prevail, creating a legacy of health, happiness, and human rights for all.</p>
+                    <h2>Core Values</h2>
+                    <ul>
+                        <li><b>Equality:</b> We advocate for gender equality and strive to create a world where all individuals have equal rights and opportunities, regardless of gender.</li>
+                        <li><b>Education:</b> We are committed to raising awareness and educating communities about the harmful effects of FGM, promoting dialogue, and fostering understanding.</li>
+                        <li><b>Empowerment:</b> We believe in empowering women and girls to make informed choices about their bodies, health, and future.</li>
+                        <li><b>Inclusivity:</b> We embrace diversity and inclusivity, ensuring that our programs and services are accessible and relevant to all communities, regardless of ethnicity, religion, or socioeconomic status.</li>
+                    </ul>
+                    <h3>You Can Download our Brochure for more</h3>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj1_PfG2ZiEAxXHUaQEHSpaCRYQFnoECBUQAQ&url=https%3A%2F%2Fdata.unicef.org%2Fwp-content%2Fuploads%2F2016%2F04%2FFGMC-2016-brochure_250.pdf&usg=AOvVaw1DxynqBEZpMRXsu9vEyxPe&opi=89978449" class="btn" download>Download Brochure</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="community" id="community">
+        <div class="community-header">
+            <h2>Community Forum</h2>
+            <span>Connect, Share, Support</span>
+            <form id="post-form">
+                <input type="text" id="name-input" placeholder="Your Name" required>
+                <textarea id="post-input" placeholder="Write your post..." required></textarea>
+                <button type="button" onclick="submitPost()">Post</button>
+            </form>                      
+        </div>
+        <div class="forum-container">
+            <div class="forum-posts" id="forum-posts">
+            </div>
+            <div class="forum-form">
+                <div class="forum-post" id="post1">
+
+                    <div class="replies-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get-involved" id="get-involved">
+        <div class="get-involved-header">
+            <h2>Get Involved</h2>
+            <p>Join our team and actively contribute to ending FGM. Fill out the form below:</p>
+            <form id="volunteer-form" action="/submit-form" method="post">
+                <b><label for="firstName">First Name:</label></b>
+                <br><input type="text" id="firstName" name="firstName" required></br>
+            
+                <b><label for="surName">Surname:</label></b>
+                <br><input type="text" id="surName" name="surName" required></br>
+            
+                <b><label for="email">Email:</label></b>
+                <br><input type="email" id="email" name="email" required></br>
+            
+                <b><label for="phoneNumber">Phone Number:</label></b>
+                <br><input type="tel" id="phoneNumber" name="phoneNumber" required></br>
+            
+                <br><button type="submit">Submit</button></br>
+            </form>            
+        </div>
+    </section>
+    <section class="news-updates" id="news-updates">
+        <div class="news-updates-header">
+            <h2>News/Updates</h2>
+            <ul class="news-list">
+                    <h3>Exciting Announcement</h3>
+                    <p class="date"><b>March 17, 2021</b></p>
+                    <p>The Kenya High Court on Wednesday refused to allow female circumcision for consenting adults, saying unlike the male cut it does not have health benefits and reduces the wellbeing of the woman it is performed on and in some cases can lead to death.
+
+                        The ruling by three High Court justices against the petition filed by Tatu Kamau said evidence presented showed women in the communities that practise female circumcision – widely referred to as female genital mutilation (FGM) because of its adverse effects – do not have a choice.</p>
+                <li>
+                    <p class="date"><b>February 10, 2024</b></p>
+                    <p class="description">An estimated 200 million girls and women worldwide have been subjected to the practice, which usually involves the partial or total removal of the external genitalia. It is a deeply rooted practice in some communities in Africa, Asia and the Middle East.
+
+                        One-in-five women and girls aged between 15 and 49 in Kenya have undergone some form of the procedure, according to the United Nations Fund for Population Activities, the UN’s sexual and reproductive health agency.
+                        
+                        President Uhuru Kenyatta has pledged to end FGM by 2022, but women’s rights groups say that target is not realistic because of crime and insecurity, the remoteness of many locations, and high prevalence rates in some areas of the country.
+                        
+                        Female circumcision can affect sexual intercourse and lead to problems with childbirth. In some cases, HIV is spread via the tools used, and excessive bleeding or badly done procedures can lead to death.
+                        
+                        “Today is a great day for the women who live in these communities that practise female genital mutilation,” said lawyer Ken Mbaabu, who is a board member of Samburu Girls Foundation, a group fighting the practice they say leads to early marriages.
+                        
+                        The court ruling upholds the rights of women to make their own decisions about their bodies, he said.
+                        
+                        While the argument of giving adults consent may seem logical, Mbaabu said, in the communities that perform the cut, a girl is considered an adult when she starts her menstrual cycle, from about 12 years.</p>
+                    <button class="read-more-btn">Read More</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Connect With Us</h2>
+            <p>Follow us on social media for more updates.</p>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/mike.song.7370" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                <a href="https://twitter.com/mike_songol" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/mike.songol" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+    </section>        
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
